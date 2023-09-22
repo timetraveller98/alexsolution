@@ -1,45 +1,54 @@
 'use client'
-import { MDBRow, MDBCol} from 'mdb-react-ui-kit';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import '../style/style.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../assets/images/logo.png'
 
 const Footer = () => {
     return (
       <footer className='bg-light' id='footer'>
     <Container >
-     <MDBRow >
-     <MDBCol sm={6}  md={6}>
-     <ul className='mt-3'>
-     <Link href="/"><Image src={logo} width={170} height={100} alt='logo'/></Link>
-    <h6 style={{color:'gray',marginLeft:'30px',marginTop:'15px'}}>Alex Solution</h6>
-     </ul>
-     <hr className="text-dark"  />
-     </MDBCol>
-       <MDBCol sm={6}  md={3}>
+     <Row >
+     
+       <Col xs={6} md={3}>
        <ul className='mt-3'>
         <h6>Company</h6>
        <Link href={'/about'}> <li>About</li></Link>
         <Link href={'/testimonials'}><li>Blog</li></Link>
        <Link href={'/contact'}><li>Contact</li></Link></ul>
        <hr className="text-dark"  />
-       </MDBCol>
+       </Col>
        
-       <MDBCol sm={6} md={3}>
+       <Col xs={6} md={3}>
        <ul className='mt-3'>
        <h6>Services</h6>
        <Link href={'/about'}><li> UI / UX Design</li></Link>
-       <Link href={'/about'}><li> FrontEnd Development</li></Link>
-       <Link href={'/about'}> <li>BackEnd Development</li></Link></ul>
+       <Link href={'/about'}><li> Frontend</li></Link>
+       <Link href={'/about'}> <li>Backend</li></Link></ul>
         <hr className="text-dark" / >
-       </MDBCol>
-       <MDBCol size={12}>
+       </Col>
+       <Col sm={{ order: 'first' }} md={3} xs={6}>
+     <ul className='mt-3'>
+     <Link href="/"><Image src='/logo.png' width={180} height={122} alt='logo'/></Link>
+    <h6 style={{color:'gray',marginLeft:'30px',marginTop:'15px'}}>Alex Solution</h6>
+     </ul>
+     <hr className="text-dark"  />
+     </Col>
+       <Col xs={6} md={3}>
+       <ul className='mt-3'>
+       <h6>Contact</h6>
+       <li>7087868780</li>
+       <li>help@alexsolution.in</li>
+      <li>IT Park, Panchkula</li></ul>
+        <hr className="text-dark" / >
+       </Col>
+       <Col xs={12}>
         <h6 style={{color:'gray', textAlign:'center', marginTop:'10px',marginBottom:'10px'}}>© Copyright 2020 Alex Solution. All Rights Reserved</h6>
-       </MDBCol>
+       </Col>
       
-     </MDBRow>
+     </Row>
      </Container>
      </footer>
     );

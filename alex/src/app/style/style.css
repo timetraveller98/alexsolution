@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.navButton{
+text-decoration: none;
+color: white;
+margin: 10px;
+text-align: center;
+margin-right: 20px;
+}

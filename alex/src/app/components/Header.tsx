@@ -6,15 +6,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import Image from 'next/image';
 import logo from '../assets/images/logo.png'
 import '../style/style.css'
+import Container from 'react-bootstrap/Container';
 
 
 const Header = () =>{
 return(
     <> 
-    
-   <Navbar expand="lg" bg='info'>
-        <Link href="/"><Image src={logo} width={100} height={60} alt='logo'/></Link>
-        <Navbar.Toggle className='me-2'/>
+   <Navbar expand="lg" bg='light' className="bg-body-teritary">
+    <Container>
+        <Link href="/"><Image src={logo} width={140} height={85} alt='logo'/></Link>
+        <Navbar.Toggle className='me-3 text-light'/>
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
           <Nav>
            <Link className='navButton' href="/" >HOME</Link>
@@ -23,7 +24,9 @@ return(
             <Link className='navButton' href="/contact" >CONTACT</Link>
           </Nav>
         </Navbar.Collapse>
+        </Container>
     </Navbar>
+    
 </>
 )
 }

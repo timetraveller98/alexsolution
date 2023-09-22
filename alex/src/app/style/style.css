@@ -2,14 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
+
 }
+li{
+    list-style: none;
+    
+}
+ul{
+    padding-left: 0;
+}
+/* Header CSS Start */
 .navButton{
 text-decoration: none;
-color: white;
+color: gray;
+font-weight: bold;
 margin: 10px;
+font-size: 14px;
 text-align: center;
 margin-right: 20px;
 }
+/* Header CSS End */
+
+/* Footer CSS Start */
+#footer{
+    color: white;
+    cursor: pointer;
+}
+#footer li:hover{
+    font-size: 1.05rem;
+    transition: all ease-in-out 0.2s;
+}
+#footer li{
+    font-size: 1.0rem;
+    transition: all ease-in-out 0.2s;
+    padding: 7px;   
+    
+}
+#footer ul a{
+   text-decoration: none;
+   color: gray;
+   font-size: 9px;
+    
+}
+#footer ul h6{
+   color: rgba(14, 10, 10, 0.712);
+   font-weight: bold;
+    
+}
+/* #footer ul{
+    border-bottom: 1px solid white;   
+    
+} */
+#footerImage{
+    display: flex;
+    
+    align-items: center;
+  
+
+}
+
+/* Footer CSS End */

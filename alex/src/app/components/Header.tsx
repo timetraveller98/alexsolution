@@ -19,7 +19,7 @@ return(
           <Nav>
            <Link className='navButton' href="/">HOME</Link>
             <Link className='navButton' href="/about">ABOUT</Link>
-            <Link className='navButton' href="/testimonials">TESTIMONIALS</Link>
+            <Link className='navButton' href="/works">PROJECTS</Link>
             <Link className='navButton' href="/contact">CONTACT</Link>
           </Nav>
         </Navbar.Collapse>

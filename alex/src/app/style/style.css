@@ -6,6 +6,7 @@
 html{
    
     scroll-behavior: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 a{
     text-decoration: none;
@@ -43,12 +44,8 @@ perspective: 800px;
 /* Footer CSS Start */
 #footer{
     color: gray;
-   font-size: 7px;
+   font-size: 6px;
     cursor: pointer;
-}
-#footer li:hover{
-    font-size: 1.05rem;
-    transition: all ease-in-out 0.2s;
 }
 #footer li{
     font-size: 1.0rem;
@@ -66,7 +63,7 @@ perspective: 800px;
 #footer ul h6{
    color: rgba(14, 10, 10, 0.712);
    font-weight: bold;
-   margin: 10px;
+   margin: 7px;
     
 }
 /* #footer ul{

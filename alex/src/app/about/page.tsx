@@ -12,8 +12,8 @@ const About = () => {
     <>
     <Container >
       <Row >
-        <Col xs={12} className='p-5'>
-          <h1 className='fw-light'>We promise to deliver top-notch digital solutions with advanced tech-stack focusing on minute project details</h1>
+        <Col xs={12} style={{backgroundColor:'#3498DB'}} className='p-4 text-light rounded'>
+          <h2 className='fw-light text-center'>We promise to deliver top-notch digital solutions with advanced tech-stack focusing on minute project details</h2>
         </Col>
         <hr />
         <Col md={8}>
@@ -43,7 +43,7 @@ const About = () => {
       <Container >
         <Row>
         <Col sm={6} md={4} className='p-4'>
-          <Card>
+          <Card className='shadow'>
             <Card.Img variant="top" src="/webdev.jpg" />
             <Card.Body>
               <Card.Title className='fs-5 m-1 fw-light'>Web Development</Card.Title>
@@ -55,7 +55,7 @@ const About = () => {
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card>
+          <Card className='shadow'>
             <Card.Img variant="top" src="/uiux.jpg" />
             <Card.Body>
               <Card.Title className='fs-5 m-1 fw-light'>Web Design</Card.Title>
@@ -67,7 +67,7 @@ const About = () => {
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card>
+          <Card className='shadow'>
             <Card.Img variant="top" src="/graphic.jpg" />
             <Card.Body>
               <Card.Title className='fs-5 m-1 fw-light'>Graphic Design</Card.Title>
@@ -79,7 +79,7 @@ const About = () => {
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card>
+          <Card className='shadow'>
             <Card.Img variant="top" src="/ecommerce.jpg" />
             <Card.Body>
               <Card.Title className='fs-5 m-1 fw-light'>eCommerce Websites</Card.Title>
@@ -88,11 +88,11 @@ const About = () => {
                 Alex Solution’s eCommerce development services aim to aid businesses to bridge the gap loopholes that occur between ideation, brainstorming, strategy & execution in all-inclusive e-commerce market spaces.
               </Card.Text>
             </Card.Body>
-          </Card>
+          </Card >
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card>
-            <Card.Img variant="top" src="/wordpress.svg" />
+          <Card className='shadow'>
+            <Card.Img variant="top" src="/wordpress.jpg" />
             <Card.Body>
               <Card.Title className='fs-5 m-1 fw-light'>WordPress Websites</Card.Title>
               <hr />
@@ -103,7 +103,7 @@ const About = () => {
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card>
+          <Card className='shadow'>
             <Card.Img variant="top" src="/digital.jpg" />
             <Card.Body>
               <Card.Title className='fs-5 m-1 fw-light'>Digital Marketing</Card.Title>

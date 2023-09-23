@@ -14,7 +14,7 @@ const Project = () =>{
         <Container >
         <Row>
         <Col xs={12} style={{backgroundColor:'#3498DB'}} className='p-4 text-light rounded'>
-          <h2 className='fw-light text-center'>Alex Solution believes in providing outstanding digital solutions to aid clients achieve their business dreams by converting your ideas into top-notch products. See how we helped various businesses achieve their dreams!</h2>
+          <h2 className='fw-light text-center'>Alex Solution believes in providing outstanding digital solutions to aid clients achieve their business dreams by converting your ideas into top-notch products.</h2>
         </Col>
       <hr />
       </Row>
@@ -27,7 +27,7 @@ const Project = () =>{
       </Row>
       </Container >
 
-      <Container >
+      <Container id='works'>
         <Row>
         <Col sm={6} md={4} className='p-4'>
           <Card className='shadow'>

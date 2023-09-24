@@ -10,7 +10,25 @@ import Card from 'react-bootstrap/Card';
 import PhoneMissedIcon from '@mui/icons-material/PhoneMissed';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 const Contact = () =>{
+  const submitEmail = ()=>{
+    alert(" Our experts will connect with you shortly")
+  }
+
+  const form:any = useRef();
+  const sendEmail = (e:any) => {
+    e.preventDefault();
+    
+
+    emailjs.sendForm('service_az19f3u', 'template_i8p4wtf', form.current, 'bYVba1GIvzKJz4SNV')
+      .then((result:any) => {
+          console.log(result.text);
+      }, (error:any) => {
+          console.log(error.text);
+      });
+  };
     return(
         <>
         <Container >
@@ -61,9 +79,11 @@ Let’s communicate!</h1>
           <Image src="/contact.jpg" className='p-5' alt='loading..' fluid />
         </Col>
         <Col md={6} className='bg-light shadow-lg p-5'>
+        <form ref={form} onSubmit={sendEmail}>
         <TextField fullWidth
           id="standard-textarea"
           label="Full Name"
+          name="user_name"
           multiline
           variant="outlined"
           className='my-3'
@@ -71,6 +91,7 @@ Let’s communicate!</h1>
         <TextField fullWidth
           id="standard-textarea"
           label="Contact"
+          name="user_contact"
           multiline
           variant="outlined"
           className='my-3'
@@ -78,6 +99,7 @@ Let’s communicate!</h1>
         <TextField fullWidth
           id="standard-textarea"
           label="Email"
+          name="user_email"
           multiline
           variant="outlined"
           className='my-3'
@@ -85,6 +107,7 @@ Let’s communicate!</h1>
         <TextField fullWidth
           id="standard-textarea"
           label="Subject"
+          name="user_subject"
           multiline
           variant="outlined"
           className='my-3'
@@ -93,11 +116,12 @@ Let’s communicate!</h1>
           id="outlined-multiline-static"
           className='my-3'
           label="Message"
+          name="message"
           multiline
           rows={4}
         />
-        <Button variant="contained" className='mt-4' style={{backgroundColor:'#45B39D', display:'block', width:'100px',margin:'auto'}}>Submit</Button>
-        
+        <Button type='submit' onClick={submitEmail} variant="contained" className='mt-4' style={{backgroundColor:'#45B39D', display:'block', width:'100px',margin:'auto'}}>Submit</Button>
+        </form>
         </Col>
       </Row>
       </Container >

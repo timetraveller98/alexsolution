@@ -18,7 +18,7 @@ const Contact = () =>{
         <Col md={4}>
         <Card className='bg-light m-5 shadow-lg'>
       <Card.Body>
-      <Card.Title><PhoneMissedIcon style={{display:'block', width:'50px',height:'50px', margin:'auto', backgroundColor:'#2980B9',border:'2px solid #2980B9',borderRadius
+      <Card.Title><PhoneMissedIcon style={{display:'block', width:'50px',height:'50px', margin:'auto', backgroundColor:'#45B39D',border:'2px solid #45B39D',borderRadius
       :'50%',color:'white',padding:'10px'}}/></Card.Title>
         <Card.Title className='m-4 text-center fs-6 fw-light'>+91 7087868780</Card.Title>
       </Card.Body>
@@ -27,7 +27,7 @@ const Contact = () =>{
         <Col md={4}>
         <Card className='bg-light m-5 shadow-lg'>
       <Card.Body>
-        <Card.Title><LocationOnIcon style={{display:'block', width:'50px',height:'50px', margin:'auto', backgroundColor:'#2980B9',border:'2px solid #2980B9',borderRadius
+        <Card.Title><LocationOnIcon style={{display:'block', width:'50px',height:'50px', margin:'auto', backgroundColor:'#45B39D',border:'2px solid #45B39D',borderRadius
       :'50%',color:'white',padding:'10px'}}/></Card.Title>
         <Card.Title className='m-4 text-center fs-6 fw-light'>IT Park, Panchkula</Card.Title>
       </Card.Body>
@@ -36,7 +36,7 @@ const Contact = () =>{
         <Col md={4}>
         <Card className='bg-light m-5 shadow-lg'>
       <Card.Body>
-      <Card.Title><EmailIcon style={{display:'block', width:'50px',height:'50px', margin:'auto', backgroundColor:'#2980B9',border:'2px solid #2980B9',borderRadius
+      <Card.Title><EmailIcon style={{display:'block', width:'50px',height:'50px', margin:'auto', backgroundColor:'#45B39D',border:'2px solid #45B39D',borderRadius
       :'50%',color:'white',padding:'10px'}}/></Card.Title>
         <Card.Title className='m-4 text-center fs-6 fw-light'>help@alexsolution.in</Card.Title>
       </Card.Body>
@@ -52,10 +52,13 @@ const Contact = () =>{
         </Col>
       </Row>
       </Container >
-        <Container className='mb-4'>
+        <Container className='mb-3'>
         <Row>
         <Col md={6}>
-          <Image src="/contact.png" className='p-3' alt='loading..' fluid />
+          <h1 className='fw-light p-2'>Want to know more? <br />
+Let’s communicate!</h1>
+<h5 className='fw-light my-4 p-4'>Fill up the form below and get ready to talk with our experts who will connect with you shortly to discuss the project.</h5>
+          <Image src="/contact.jpg" className='p-5' alt='loading..' fluid />
         </Col>
         <Col md={6} className='bg-light shadow-lg p-5'>
         <TextField fullWidth
@@ -93,7 +96,7 @@ const Contact = () =>{
           multiline
           rows={4}
         />
-        <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}>Submit</Button>
+        <Button variant="contained" className='mt-4' style={{backgroundColor:'#45B39D', display:'block', width:'100px',margin:'auto'}}>Submit</Button>
         
         </Col>
       </Row>

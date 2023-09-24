@@ -13,8 +13,8 @@ const Project = () =>{
         <>
         <Container >
         <Row>
-        <Col xs={12} style={{backgroundColor:'#3498DB'}} className='p-4 text-light rounded'>
-          <h2 className='fw-light text-center'>Alex Solution believes in providing outstanding digital solutions to aid clients achieve their business dreams by converting your ideas into top-notch products.</h2>
+        <Col xs={12} style={{backgroundColor:'#D7BDE2'}} className='shadow p-4 text-light rounded'>
+          <h3 className='fw-light text-center'>Alex Solution believes in providing outstanding digital solutions to aid clients achieve their business dreams by converting your ideas into top-notch products.</h3>
         </Col>
       <hr />
       </Row>
@@ -38,8 +38,7 @@ const Project = () =>{
               <Card.Text className='m-1 fw-light'>
               We helped them rebrand and build a new eCommerce website for their innovative products and services.
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://amartex.in' className='text-light' target='_blank'>Visit</Link></Button>
-              
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://amartex.in' className='text-light' target='_blank'>Visit</Link></Button>
             </Card.Body>
           </Card>
         </Col>
@@ -52,7 +51,7 @@ const Project = () =>{
               <Card.Text className='m-1 fw-light'>
               We assisted them in initiating a Saas-based web application for property tenants and managers.
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://qyubitech.com' className='text-light' target='_blank'>Visit</Link></Button>
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://qyubitech.com' className='text-light' target='_blank'>Visit</Link></Button>
               
             </Card.Body>
           </Card>
@@ -66,7 +65,7 @@ const Project = () =>{
               <Card.Text className='m-1 fw-light'>
               We revamped their website to promote branding and also helped them build engagement with their audience.
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://qudex.io' className='text-light' target='_blank'>Visit</Link></Button>
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://qudex.io' className='text-light' target='_blank'>Visit</Link></Button>
               
             </Card.Body>
           </Card>
@@ -80,7 +79,7 @@ const Project = () =>{
               <Card.Text className='m-1 fw-light'>
               We supported them in their telemedical and Tele counseling services by designing and developing mobile and web app for them.
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://qtrade9.com' className='text-light' target='_blank'>Visit</Link></Button>
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2', display:'block', width:'100px',margin:'auto'}}><Link href='https://qtrade9.com' className='text-light' target='_blank'>Visit</Link></Button>
               
             </Card.Body>
           </Card>
@@ -94,7 +93,7 @@ const Project = () =>{
               <Card.Text className='m-1 fw-light'>
               We lend a helping hand to them by transforming their corporate website and maximizing the volume of their qualified leads by 180%.
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://qdhun.in' className='text-light' target='_blank'>Visit</Link></Button>
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://qdhun.in' className='text-light' target='_blank'>Visit</Link></Button>
               
             </Card.Body>
           </Card >
@@ -109,7 +108,7 @@ const Project = () =>{
               We helped Supervisual in developing their website with awesome ideas & animations. All this was made possible with our technical expertise.
 
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://qprime.global' className='text-light' target='_blank'>Visit</Link></Button>
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://qprime.global' className='text-light' target='_blank'>Visit</Link></Button>
               
             </Card.Body>
           </Card>
@@ -123,7 +122,7 @@ const Project = () =>{
               <Card.Text className='m-1 fw-light'>
               We were the reason behind their increased sales. Plus, we helped them with their digital presence with awesome website revamp.
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://tracknsure.com' className='text-light' target='_blank'>Visit</Link></Button>
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://tracknsure.com' className='text-light' target='_blank'>Visit</Link></Button>
               
             </Card.Body>
           </Card>
@@ -138,7 +137,7 @@ const Project = () =>{
         
               We partnered with them to develop and launch a marketplace for students and trainers.
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://qskool.in' className='text-light' target='_blank'>Visit</Link></Button>
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://qskool.in' className='text-light' target='_blank'>Visit</Link></Button>
               
             </Card.Body>
           </Card>
@@ -152,7 +151,7 @@ const Project = () =>{
               <Card.Text className='m-1 fw-light'>
               We helped a Dutch Charity trust launch its website. It’s our pleasure to help them in their mission to help the entire world.
               </Card.Text>
-              <Button variant="contained" className='my-4' style={{display:'block', width:'100px',margin:'auto'}}><Link href='https://pragatikasaathi.com' className='text-light' target='_blank'>Visit</Link></Button>
+              <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://pragatikasaathi.com' className='text-light' target='_blank'>Visit</Link></Button>
 
             </Card.Body>
           </Card>

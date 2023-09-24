@@ -12,8 +12,8 @@ const About = () => {
     <>
     <Container >
       <Row >
-        <Col xs={12} style={{backgroundColor:'#3498DB'}} className='p-4 text-light rounded'>
-          <h2 className='fw-light text-center'>We promise to deliver top-notch digital solutions with advanced tech-stack focusing on minute project details</h2>
+        <Col xs={12} style={{backgroundColor:'#A9CCE3 '}} className='shadow p-4 text-light rounded'>
+          <h3 className='fw-light text-center'>We promise to deliver top-notch digital solutions with advanced tech-stack focusing on minute project details</h3>
         </Col>
         <hr />
         <Col md={8}>

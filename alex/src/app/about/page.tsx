@@ -39,26 +39,25 @@ const About = () => {
         </Col>
       </Row>
       </Container >
-
       <Container >
-        <Row>
-        <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
-            <Card.Img variant="top" src="/webdev.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Web Development</Card.Title>
+        <Row> 
+          <Col sm={6} md={4} className='p-4'>
+          <Card className='shadow p-2 bg-light'>
+            <Card.Img variant="top" src="/digital.jpg" />
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Digital Marketing</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
-                We’re a full-service website development organization that covers the whale life cycle – from designing, strategizing, and developing, to testing, deploying, and supporting scalable solutions for all types of businesses.
+                We’re the ones who believe in driving the market by business goals and focusing on the right target audience. This is why we use a flexible and integrated approach that’s helpful in using diverse skill sets across the team. We are completely dedicated to constantly improving the outcomes for your business
               </Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow p-2 bg-light'>
             <Card.Img variant="top" src="/uiux.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Web Design</Card.Title>
+            <Card.Body  className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Web Design</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
                 We know that an efficient & effective brand web design is a vital ingredient of anyone’s marketing strategy. A disciplined content marketing plan along with a nurturing website design leads you toward a committed relationship with your client. From nurturing the leads to long-lasting relationships, our services are utmost in every aspect.
@@ -67,10 +66,10 @@ const About = () => {
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow p-2 bg-light'>
             <Card.Img variant="top" src="/graphic.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Graphic Design</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Graphic Design</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
                 We specialize in bringing brands to life with our compelling brand storytelling & comprehensive experiences. Designing an innovative, consistent, memorable, intuitive, and scalable identity for your brand is our core motive. Because your brand is responsible for developing a connection with everyone around.
@@ -79,10 +78,10 @@ const About = () => {
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow p-2 bg-light'>
             <Card.Img variant="top" src="/ecommerce.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>eCommerce Websites</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>eCommerce Websites</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
                 Alex Solution’s eCommerce development services aim to aid businesses to bridge the gap loopholes that occur between ideation, brainstorming, strategy & execution in all-inclusive e-commerce market spaces.
@@ -91,10 +90,10 @@ const About = () => {
           </Card >
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow p-2 bg-light'>
             <Card.Img variant="top" src="/wordpress.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>WordPress Websites</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>WordPress Websites</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
                 We’re a full-service website development organization that covers the whale life cycle – from designing, strategizing, and developing, to testing, deploying, and supporting scalable solutions for all types of businesses.
@@ -103,13 +102,13 @@ const About = () => {
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
-            <Card.Img variant="top" src="/digital.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Digital Marketing</Card.Title>
+          <Card className='shadow p-2 bg-light'>
+            <Card.Img variant="top" src="/webdev.jpg" />
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Web Development</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
-                We’re the ones who believe in driving the market by business goals and focusing on the right target audience. This is why we use a flexible and integrated approach that’s helpful in using diverse skill sets across the team. We are completely dedicated to constantly improving the outcomes for your business
+                We’re a full-service website development organization that covers the whale life cycle – from designing, strategizing, and developing, to testing, deploying, and supporting scalable solutions for all types of businesses.
               </Card.Text>
             </Card.Body>
           </Card>

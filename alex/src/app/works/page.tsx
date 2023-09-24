@@ -30,10 +30,10 @@ const Project = () =>{
       <Container id='works'>
         <Row>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/grocery.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>eCommerce Website</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>eCommerce Website</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
               We helped them rebrand and build a new eCommerce website for their innovative products and services.
@@ -43,12 +43,12 @@ const Project = () =>{
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/ai.jpg" />
-            <Card.Body>
+            <Card.Body className='bg-light'>
               <Card.Title className='fs-5 m-1 fw-light'>AI Website</Card.Title>
               <hr />
-              <Card.Text className='m-1 fw-light'>
+              <Card.Text className='m-1 fw-light text-center'>
               We assisted them in initiating a Saas-based web application for property tenants and managers.
               </Card.Text>
               <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://qyubitech.com' className='text-light' target='_blank'>Visit</Link></Button>
@@ -57,10 +57,10 @@ const Project = () =>{
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/crypto.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Crypto Website</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Crypto Website</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
               We revamped their website to promote branding and also helped them build engagement with their audience.
@@ -71,10 +71,10 @@ const Project = () =>{
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/trade.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Trade Website</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Trade Website</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
               We supported them in their telemedical and Tele counseling services by designing and developing mobile and web app for them.
@@ -85,10 +85,10 @@ const Project = () =>{
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/event.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Event Website</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Event Website</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
               We lend a helping hand to them by transforming their corporate website and maximizing the volume of their qualified leads by 180%.
@@ -99,10 +99,10 @@ const Project = () =>{
           </Card >
         </Col> 
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/forex.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Forex Website</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Forex Website</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
               We helped Supervisual in developing their website with awesome ideas & animations. All this was made possible with our technical expertise.
@@ -114,12 +114,12 @@ const Project = () =>{
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/track.jpg" />
-            <Card.Body>
+            <Card.Body className='bg-light'>
               <Card.Title className='fs-5 m-1 fw-light'>Tracking Website</Card.Title>
               <hr />
-              <Card.Text className='m-1 fw-light'>
+              <Card.Text className='m-1 fw-light text-center'>
               We were the reason behind their increased sales. Plus, we helped them with their digital presence with awesome website revamp.
               </Card.Text>
               <Button variant="contained" className='my-4' style={{backgroundColor:'#D7BDE2',display:'block', width:'100px',margin:'auto'}}><Link href='https://tracknsure.com' className='text-light' target='_blank'>Visit</Link></Button>
@@ -128,10 +128,10 @@ const Project = () =>{
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/school.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Teaching Website</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Teaching Website</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
         
@@ -143,10 +143,10 @@ const Project = () =>{
           </Card>
         </Col>
         <Col sm={6} md={4} className='p-4'>
-          <Card className='shadow'>
+          <Card className='shadow shadow p-2 bg-light'>
             <Card.Img variant="top" src="/works/charity.jpg" />
-            <Card.Body>
-              <Card.Title className='fs-5 m-1 fw-light'>Charity Website</Card.Title>
+            <Card.Body className='bg-light'>
+              <Card.Title className='fs-5 m-1 fw-light text-center'>Charity Website</Card.Title>
               <hr />
               <Card.Text className='m-1 fw-light'>
               We helped a Dutch Charity trust launch its website. It’s our pleasure to help them in their mission to help the entire world.

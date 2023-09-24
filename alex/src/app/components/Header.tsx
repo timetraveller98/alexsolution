@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 
 
 const Header = () =>{
+
 return(
     <> 
    <Navbar expand="lg" bg='light' className="bg-body-teritary sticky-top">
@@ -20,7 +21,7 @@ return(
            <Link className='navButton' href="/">HOME</Link>
             <Link className='navButton' href="/about">ABOUT</Link>
             <Link className='navButton' href="/works">PROJECTS</Link>
-            <Link className='navButton' href="/contact">CONTACT</Link>
+            <Link className='navButton'  href="/contact">CONTACT</Link>
           </Nav>
         </Navbar.Collapse>
         </Container>

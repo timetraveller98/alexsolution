@@ -55,9 +55,9 @@ const Contact = () =>{
         <Container className='mb-3'>
         <Row>
         <Col md={6}>
-          <h1 className='fw-light p-2'>Want to know more? <br />
+          <h1 className='fw-light p-3'>Want to know more? <br />
 Let’s communicate!</h1>
-<h5 className='fw-light my-4 p-4'>Fill up the form below and get ready to talk with our experts who will connect with you shortly to discuss the project.</h5>
+<h5 className='fw-light my-4 p-3'>Fill up the form below and get ready to talk with our experts who will connect with you shortly to discuss the project.</h5>
           <Image src="/contact.jpg" className='p-5' alt='loading..' fluid />
         </Col>
         <Col md={6} className='bg-light shadow-lg p-5'>

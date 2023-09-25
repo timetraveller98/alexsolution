@@ -12,25 +12,33 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-const Contact = () =>{
-  const submitEmail = ()=>{
-    alert(" Our experts will connect with you shortly")
-  }
+import Toast from 'react-bootstrap/Toast';
+import { useState } from 'react';
 
+const Contact = () =>{
+  const [show, setShow] = useState(false);
   const form:any = useRef();
   const sendEmail = (e:any) => {
     e.preventDefault();
     
 
     emailjs.sendForm('service_az19f3u', 'template_i8p4wtf', form.current, 'bYVba1GIvzKJz4SNV')
-      .then((result:any) => {
-          console.log(result.text);
+      .then(() => {
+        setShow(true);
+        setTimeout(()=>{
+          window.location.reload()
+        },4000)
+
+          
       }, (error:any) => {
           console.log(error.text);
       });
   };
     return(
         <>
+        <div style={{position:'fixed',left:"40%"}}><Toast onClose={() => setShow(false)} show={show} delay={2000} autohide>
+          <Toast.Body className='text-light bg-success'>Thanks ! Our experts team will connect with you shortly</Toast.Body>
+        </Toast></div>
         <Container >
         <Row>
         <Col md={4}>
@@ -79,7 +87,7 @@ Let’s communicate!</h1>
           <Image src="/contact.jpg" className='p-5' alt='loading..' fluid />
         </Col>
         <Col md={6} className='bg-light shadow-lg p-5'>
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} id='myForm' onSubmit={sendEmail}>
         <TextField fullWidth
           id="standard-textarea"
           label="Full Name"
@@ -87,6 +95,9 @@ Let’s communicate!</h1>
           multiline
           variant="outlined"
           className='my-3'
+          type='text'
+          autoComplete='off'
+          required
         />
         <TextField fullWidth
           id="standard-textarea"
@@ -95,6 +106,9 @@ Let’s communicate!</h1>
           multiline
           variant="outlined"
           className='my-3'
+          type='tel'
+          autoComplete='off'
+          required
         />
         <TextField fullWidth
           id="standard-textarea"
@@ -103,6 +117,9 @@ Let’s communicate!</h1>
           multiline
           variant="outlined"
           className='my-3'
+          type='email'
+          autoComplete='off'
+          required
         />
         <TextField fullWidth
           id="standard-textarea"
@@ -111,6 +128,9 @@ Let’s communicate!</h1>
           multiline
           variant="outlined"
           className='my-3'
+          type='text'
+          autoComplete='off'
+          required
         />
          <TextField fullWidth
           id="outlined-multiline-static"
@@ -119,8 +139,11 @@ Let’s communicate!</h1>
           name="message"
           multiline
           rows={4}
+          type='text'
+          autoComplete='off'
+          required
         />
-        <Button type='submit' onClick={submitEmail} variant="contained" className='mt-4' style={{backgroundColor:'#45B39D', display:'block', width:'100px',margin:'auto'}}>Submit</Button>
+        <Button type='submit' variant="contained" className='mt-4' style={{backgroundColor:'#45B39D', display:'block', width:'100px',margin:'auto'}}>Submit</Button>
         </form>
         </Col>
       </Row>

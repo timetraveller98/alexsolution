@@ -81,7 +81,16 @@ perspective: 800px;
 text-decoration: none;
 }
 /* Works CSS End */
-/* Home CSS Start */
+/* Contact Error CSS Start */
+.errorHandle{
+    color: red;
+    font-weight: light;
+    font-size: 15px;
+    position: relative;
+    left: 10px;
+    top: -10px;
 
-/* Home CSS End */
+}
+
+/* Contact Error CSS End */
 

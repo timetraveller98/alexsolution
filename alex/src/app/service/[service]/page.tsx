@@ -4,30 +4,27 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '@/app/style/style.css'
 import { Image } from 'react-bootstrap';
-
-
+import data from '@/app/data.json'
 const Service = ({params}:any) =>{
-   
+  const userData = data.filter((item)=>item.id==params.service)  
 return(
     <>
-    <Container >
-        <Row>
+    <Container className='my-3'>
+        <Row style={{backgroundColor:'#0CAEEA'}}>
         <Col xs={12}>
-        <h2 className='fw-light text-center text-secondary p-3 my-4 shadow'></h2>
+        <h2 className='fw-light text-center p-3 text-light my-4 text-uppercase'>{userData[0].name}</h2>
         </Col>
+        <hr className='text-light'/>
+              <Col xs={6}>
+          <Image className='ms-5' src={`/home/${userData[0].id}.png`} alt='loading' fluid />
+        </Col>
+        <Col md={6} className='p-2'>
+          <h6 className='fw-light p-3 mt-3 text-secondary text-light'>{userData[0].description}</h6>
+        </Col> 
       </Row>
-      <hr />
       </Container >
-    <Container >
-        <Row>
-        <Col xs={6}>
-          <Image className='ms-4' src={`/service/${params.service}.jpg`} alt='loading' fluid />
-        </Col>
-        <Col md={6} className='p-4'>
-          <h5 className='fw-light p-2 text-secondary'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium error saepe doloribus quam cum vitae nemo a cupiditate nisi accusamus optio, odio aut necessitatibus veritatis blanditiis architecto laboriosam, magnam earum voluptatibus mollitia. Laboriosam earum temporibus error sunt aperiam sequi odit deserunt aut, ullam autem velit necessitatibus delectus voluptatibus quae dolore distinctio tenetur veritatis maiores atque nulla placeat eveniet repellat. Cupiditate aperiam expedita qui unde magni corporis quam quas tempora ut culpa atque deleniti iusto est perferendis accusamus ipsam nihil delectus, impedit aliquam saepe praesentium molestiae ullam. Natus saepe blanditiis beatae ab eos necessitatibus minus, minima nostrum mollitia accusantium voluptate?</h5>
-        </Col>
-      </Row>
-      </Container ></>
+      
+      </>
 )
 }
 export default Service;

@@ -17,6 +17,7 @@ import { useState } from 'react';
 
 const Contact = () =>{
   const [show, setShow] = useState(false);
+
   const form:any = useRef();
   const sendEmail = (e:any) => {
     e.preventDefault();
@@ -25,9 +26,7 @@ const Contact = () =>{
     emailjs.sendForm('service_az19f3u', 'template_i8p4wtf', form.current, 'bYVba1GIvzKJz4SNV')
       .then(() => {
         setShow(true);
-        setTimeout(()=>{
-          window.location.reload()
-        },4000)
+        
 
           
       }, (error:any) => {
@@ -89,6 +88,7 @@ Let’s communicate!</h1>
         <Col md={6} className='bg-light shadow-lg p-5'>
         <form ref={form} id='myForm' onSubmit={sendEmail}>
         <TextField fullWidth
+   
           id="standard-textarea"
           label="Full Name"
           name="user_name"
@@ -100,6 +100,7 @@ Let’s communicate!</h1>
           required
         />
         <TextField fullWidth
+   
           id="standard-textarea"
           label="Contact"
           name="user_contact"
@@ -111,6 +112,7 @@ Let’s communicate!</h1>
           required
         />
         <TextField fullWidth
+       
           id="standard-textarea"
           label="Email"
           name="user_email"
@@ -122,6 +124,7 @@ Let’s communicate!</h1>
           required
         />
         <TextField fullWidth
+      
           id="standard-textarea"
           label="Subject"
           name="user_subject"
@@ -133,6 +136,7 @@ Let’s communicate!</h1>
           required
         />
          <TextField fullWidth
+      
           id="outlined-multiline-static"
           className='my-3'
           label="Message"

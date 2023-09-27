@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Image from 'next/image';
+import Image from 'react-bootstrap/Image';
 import '../style/style.css'
 import Container from 'react-bootstrap/Container';
 
